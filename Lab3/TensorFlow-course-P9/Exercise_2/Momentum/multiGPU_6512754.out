@@ -1,0 +1,50 @@
+[1673057102.702473] [p9r3n03:127250:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1673057102.731943] [p9r3n03:127250:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+TRAINING
+ERROR CHECK
+Train accuracy: 0.09864000231027603
+Train loss: nan
+Validation accuracy: 0.09799999743700027
+Validation loss: nan
+TRAINING
+ERROR CHECK
+Train accuracy: 0.9081400036811829
+Train loss: 0.31740596890449524
+Validation accuracy: 0.1005999967455864
+Validation loss: 9.26968002319336
+TRAINING
+ERROR CHECK
+Train accuracy: 0.9083399772644043
+Train loss: 0.32045257091522217
+Validation accuracy: 0.10119999945163727
+Validation loss: 8.028895378112793
+TRAINING
+ERROR CHECK
+Train accuracy: 0.8907600045204163
+Train loss: 0.39954328536987305
+Validation accuracy: 0.10170000046491623
+Validation loss: 5.9765400886535645
+TRAINING
+ERROR CHECK
+Train accuracy: 0.8789799809455872
+Train loss: 0.4667764902114868
+Validation accuracy: 0.10109999775886536
+Validation loss: 5.126538276672363
+TRAINING
+ERROR CHECK
+Train accuracy: 0.8378400206565857
+Train loss: 0.8093501329421997
+Validation accuracy: 0.10119999945163727
+Validation loss: 3.340829610824585
+TRAINING
+ERROR CHECK
+Train accuracy: 0.8117200136184692
+Train loss: 1.0971958637237549
+Validation accuracy: 0.10209999978542328
+Validation loss: 2.8017680644989014
+TRAINING
+ERROR CHECK
+Train accuracy: 0.7476599812507629
+Train loss: 1.8706257343292236
+Validation accuracy: 0.10050000250339508
+Validation loss: 2.3453288078308105
