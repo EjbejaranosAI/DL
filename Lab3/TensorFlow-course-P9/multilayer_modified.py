@@ -6,10 +6,13 @@ import time
 import random 
 
 
-batch_size = 16
-
-
+batch_size = 8
+# Get the number of GPUs available
+gpus = tf.Session().list_devices()
+num_gpus = sum([1 for gpu in gpus if gpu.device_type == 'GPU'])
+print("Num GPUs Available: ", num_gpus)
 #print("Num GPUs Available: ", len(tf.config.experimental.list_physical_devices('GPU')))
+
 
 data_input = read_inputs.load_data_mnist('MNIST_data/mnist.pkl.gz')
 
@@ -19,7 +22,7 @@ print ( N.shape(data[0][0])[0] )
 print ( N.shape(data[0][1])[0] )
 
 train_size = N.shape(data[0][0])[0]
-N_GPU = 4
+N_GPU = 1
 
 #data layout changes since output should an array of 10 with probabilities
 real_output = N.zeros( (N.shape(data[0][1])[0] , 10), dtype=N.float )
@@ -98,7 +101,7 @@ h_pool2_flat = tf.reshape(h_pool2, [-1, 7*7*64])
 h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)
 
 #drop_out
-keep_prob = 0.5
+keep_prob = 0.7
 keep_prob = tf.placeholder_with_default(keep_prob, shape=())
 
 #keep_prob = tf.placeholder(tf.float32)
@@ -122,7 +125,7 @@ cross_entropy = tf.reduce_mean(cross_entropy_local)
 # ---------------------------------
 batch = tf.Variable(0)
 learning_rate = tf.train.exponential_decay(
-  1e-4,                # Base learning rate.
+  5e-4,                # Base learning rate.
   batch * batch_size,  # Current index into the dataset.
   train_size,          # Decay step.
   0.95,                # Decay rate.
@@ -141,6 +144,9 @@ with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
   #TRAIN 
   print("TRAINING")
 
+  gpus = tf.Session().list_devices()
+  num_gpus = sum([1 for gpu in gpus if gpu.device_type == 'GPU'])
+  print("Num GPUs Available: ", num_gpus)
   start_time = time.time()
 
   # -----------------------
@@ -155,33 +161,39 @@ with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
   #  Batch size of 8
   # ----------------------
   num_epochs = 6250
+  # ---------------------  
+  # Bathc size of 16
+  # --------------------
+  #num_epochs = 3125
   #data_train = data[0][0]
   for i in range(num_epochs):
     # ---------------------------------
     # Shuffle the data after each epoch
     # --------------------------------
-    data_list = list(data[0])
-    real_output_list = list(real_output) 
+    #data_list = list(data[0])
+    #real_output_list = list(real_output) 
     # Convert data and labels to a list of tuples
-    data_and_labels = list(zip(data_list[0], real_output_list))
+    #data_and_labels = list(zip(data_list[0], real_output_list))
     
     # Shuffle the list of tuples
-    random.shuffle(data_and_labels)
+    #random.shuffle(data_and_labels)
     # Unpack the list of tuples back into data and labels
-    data_list[0], real_output_list = zip(*data_and_labels)
-    data[0] = tuple(data_list)
-    real_output = tuple(real_output_list)
+    #data_list[0], real_output_list = zip(*data_and_labels)
+    #data[0] = tuple(data_list)
+    #real_output = tuple(real_output_list)
     #until 1000 96,35%
-    batch_ini = 8*i
-    batch_end = 8*i+8
-    for j in range(N_GPU):
+    batch_ini =8*i
+    batch_end =8*i+8
+    
+    #for j in range(N_GPU):
+    for j in range(num_gpus):
       with tf.device('/gpu:%d' %j):
         batch_xs = data[0][0][batch_ini:batch_end]
         batch_ys = real_output[batch_ini:batch_end]
 
-    if i % 10 == 0:
+    if i % 20 == 0:
       train_accuracy = accuracy.eval(feed_dict={
-          x: batch_xs, y_: batch_ys, keep_prob: 1.0})
+          x: batch_xs, y_: batch_ys, keep_prob: 3.0})
       print('step %d, training accuracy %g Batch [%d,%d]' % (i, train_accuracy, batch_ini, batch_end))
 
     train_step.run(feed_dict={x: batch_xs, y_: batch_ys, keep_prob: 0.5})
@@ -193,6 +205,4 @@ with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
   train_accuracy = accuracy.eval(feed_dict={x: data[2][0], y_: real_check, keep_prob: 1.0})
   print('test accuracy %.3f' %(train_accuracy))
 
-
-
-
+  print("Num GPUs Available: ", num_gpus)

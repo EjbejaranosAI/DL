@@ -1,0 +1,717 @@
+[1673071305.245008] [p9r3n03:17926:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1673071305.277331] [p9r3n03:17926:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+Device mapping:
+/job:localhost/replica:0/task:0/device:XLA_CPU:0 -> device: XLA_CPU device
+/job:localhost/replica:0/task:0/device:XLA_GPU:0 -> device: XLA_GPU device
+/job:localhost/replica:0/task:0/device:XLA_GPU:1 -> device: XLA_GPU device
+/job:localhost/replica:0/task:0/device:XLA_GPU:2 -> device: XLA_GPU device
+/job:localhost/replica:0/task:0/device:XLA_GPU:3 -> device: XLA_GPU device
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0
+/job:localhost/replica:0/task:0/device:GPU:1 -> device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0
+/job:localhost/replica:0/task:0/device:GPU:2 -> device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0
+/job:localhost/replica:0/task:0/device:GPU:3 -> device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0
+zeros: (Fill): /job:localhost/replica:0/task:0/device:GPU:0
+Variable: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal/TruncatedNormal: (TruncatedNormal): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+Conv2D: (Conv2D): /job:localhost/replica:0/task:0/device:GPU:0
+add: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Relu: (Relu): /job:localhost/replica:0/task:0/device:GPU:0
+MaxPool: (MaxPool): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_1/TruncatedNormal: (TruncatedNormal): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_1/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_1: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Conv2D_1: (Conv2D): /job:localhost/replica:0/task:0/device:GPU:0
+add_1: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Relu_1: (Relu): /job:localhost/replica:0/task:0/device:GPU:0
+MaxPool_1: (MaxPool): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_2/TruncatedNormal: (TruncatedNormal): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_2/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_2: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+add_2: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Relu_2: (Relu): /job:localhost/replica:0/task:0/device:GPU:0
+PlaceholderWithDefault: (PlaceholderWithDefault): /job:localhost/replica:0/task:0/device:GPU:0
+sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/add: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/Floor: (Floor): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/truediv: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_3/TruncatedNormal: (TruncatedNormal): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_3/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_3: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_8: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_8/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_8/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul_1: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+add_3: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/labels_stop_gradient: (StopGradient): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Shape_1: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Slice/begin: (Pack): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Slice: (Slice): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/concat: (ConcatV2): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Shape_2: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Sub_1: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Slice_1/begin: (Pack): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Slice_1: (Slice): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/concat_1: (ConcatV2): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg: (SoftmaxCrossEntropyWithLogits): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Sub_2: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Slice_2/size: (Pack): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Slice_2: (Slice): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Reshape_2: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+Mean: (Mean): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_9: (VariableV2): /job:localhost/replica:0/task:0/device:CPU:0
+Variable_9/Assign: (Assign): /job:localhost/replica:0/task:0/device:CPU:0
+Variable_9/read: (Identity): /job:localhost/replica:0/task:0/device:CPU:0
+mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+ExponentialDecay/Cast: (Cast): /job:localhost/replica:0/task:0/device:GPU:0
+ExponentialDecay/Cast_2: (Cast): /job:localhost/replica:0/task:0/device:GPU:0
+ExponentialDecay/truediv: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+ExponentialDecay/Floor: (Floor): /job:localhost/replica:0/task:0/device:GPU:0
+ExponentialDecay/Pow: (Pow): /job:localhost/replica:0/task:0/device:GPU:0
+ExponentialDecay: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Fill: (Fill): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Tile: (Tile): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Shape_1: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Prod: (Prod): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Prod_1: (Prod): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Maximum: (Maximum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/floordiv: (FloorDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Cast: (Cast): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/truediv: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg/Reshape_2_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg/Reshape_2_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/zeros_like: (ZerosLike): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg_grad/ExpandDims: (ExpandDims): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg_grad/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg_grad/LogSoftmax: (LogSoftmax): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg_grad/Neg: (Neg): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg_grad/ExpandDims_1: (ExpandDims): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg_grad/mul_1: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg/Reshape_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg/Reshape_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/MatMul_1: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Shape_1: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Mul_1: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/RealDiv: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/Neg: (Neg): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/RealDiv_1: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/RealDiv_2: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Relu_2_grad/ReluGrad: (ReluGrad): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/MatMul_1: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Reshape_1_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Reshape_1_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MaxPool_1_grad/MaxPoolGrad: (MaxPoolGrad): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Relu_1_grad/ReluGrad: (ReluGrad): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/ShapeN: (ShapeN): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/Conv2DBackpropInput: (Conv2DBackpropInput): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/Conv2DBackpropFilter: (Conv2DBackpropFilter): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MaxPool_grad/MaxPoolGrad: (MaxPoolGrad): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Relu_grad/ReluGrad: (ReluGrad): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_grad/ShapeN: (ShapeN): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_grad/Conv2DBackpropInput: (Conv2DBackpropInput): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_grad/Conv2DBackpropFilter: (Conv2DBackpropFilter): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam/Initializer/zeros: (Fill): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1/Initializer/zeros: (Fill): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam/Initializer/zeros: (Fill): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1/Initializer/zeros: (Fill): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam/Initializer/zeros: (Fill): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam_1/Initializer/zeros: (Fill): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam/Initializer/zeros: (Fill): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam_1/Initializer/zeros: (Fill): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_8/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_8/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_8/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_8/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_8/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_8/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_1/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_2/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_3/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_4/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_5/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_6/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_7/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_8/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/mul_1: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/Assign_1: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Adam: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+ArgMax: (ArgMax): /job:localhost/replica:0/task:0/device:GPU:0
+ArgMax_1: (ArgMax): /job:localhost/replica:0/task:0/device:GPU:0
+Equal: (Equal): /job:localhost/replica:0/task:0/device:GPU:0
+Cast: (Cast): /job:localhost/replica:0/task:0/device:GPU:0
+Mean_1: (Mean): /job:localhost/replica:0/task:0/device:GPU:0
+init: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+Placeholder: (Placeholder): /job:localhost/replica:0/task:0/device:GPU:0
+zeros/shape_as_tensor: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+zeros/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Placeholder_1: (Placeholder): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal/mean: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal/stddev: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Reshape/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_1/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_1/mean: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_1/stddev: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_2/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_2/mean: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_2/stddev: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const_2: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Reshape_1/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+PlaceholderWithDefault/input: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+sub/x: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/sub/x: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_3/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_3/mean: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_3/stddev: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const_3: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Rank: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Rank_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Sub/y: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Slice/size: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/concat/values_0: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/concat/axis: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Rank_2: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Sub_1/y: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Slice_1/size: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/concat_1/values_0: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/concat_1/axis: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Sub_2/y: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits_sg/Slice_2/begin: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const_4: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_9/initial_value: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+mul/y: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+ExponentialDecay/learning_rate: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+ExponentialDecay/Cast/x: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+ExponentialDecay/Cast_1/x: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/grad_ys_0: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Reshape/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Shape_2: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Const_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Maximum/y: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg_grad/ExpandDims/dim: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_sg_grad/ExpandDims_1/dim: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/Shape_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/truediv_grad/Shape_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/Shape_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/Shape_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/Shape_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power/initial_value: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power/initial_value: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam/Initializer/zeros/shape_as_tensor: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam/Initializer/zeros/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1/Initializer/zeros/shape_as_tensor: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1/Initializer/zeros/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam/Initializer/zeros/shape_as_tensor: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam/Initializer/zeros/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1/Initializer/zeros/shape_as_tensor: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1/Initializer/zeros/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam/Initializer/zeros/shape_as_tensor: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam/Initializer/zeros/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam_1/Initializer/zeros/shape_as_tensor: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam_1/Initializer/zeros/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam/Initializer/zeros/shape_as_tensor: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam/Initializer/zeros/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam_1/Initializer/zeros/shape_as_tensor: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam_1/Initializer/zeros/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_8/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_8/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/beta1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/beta2: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/epsilon: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+ArgMax/dimension: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+ArgMax_1/dimension: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const_5: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+50000
+50000
+TRAINING
+step 0, training accuracy 0.125 Batch [0,16]
+step 10, training accuracy 0.25 Batch [160,176]
+step 20, training accuracy 0.25 Batch [320,336]
+step 30, training accuracy 0.25 Batch [480,496]
+step 40, training accuracy 0.5 Batch [640,656]
+step 50, training accuracy 0.625 Batch [800,816]
+step 60, training accuracy 0.625 Batch [960,976]
+step 70, training accuracy 0.625 Batch [1120,1136]
+step 80, training accuracy 0.5 Batch [1280,1296]
+step 90, training accuracy 0.75 Batch [1440,1456]
+step 100, training accuracy 0.75 Batch [1600,1616]
+step 110, training accuracy 0.875 Batch [1760,1776]
+step 120, training accuracy 0.75 Batch [1920,1936]
+step 130, training accuracy 0.9375 Batch [2080,2096]
+step 140, training accuracy 0.8125 Batch [2240,2256]
+step 150, training accuracy 0.875 Batch [2400,2416]
+step 160, training accuracy 0.9375 Batch [2560,2576]
+step 170, training accuracy 0.875 Batch [2720,2736]
+step 180, training accuracy 0.75 Batch [2880,2896]
+step 190, training accuracy 0.875 Batch [3040,3056]
+step 200, training accuracy 0.8125 Batch [3200,3216]
+step 210, training accuracy 0.8125 Batch [3360,3376]
+step 220, training accuracy 0.8125 Batch [3520,3536]
+step 230, training accuracy 0.8125 Batch [3680,3696]
+step 240, training accuracy 0.9375 Batch [3840,3856]
+step 250, training accuracy 0.9375 Batch [4000,4016]
+step 260, training accuracy 0.8125 Batch [4160,4176]
+step 270, training accuracy 0.75 Batch [4320,4336]
+step 280, training accuracy 0.9375 Batch [4480,4496]
+step 290, training accuracy 0.8125 Batch [4640,4656]
+step 300, training accuracy 0.875 Batch [4800,4816]
+step 310, training accuracy 0.9375 Batch [4960,4976]
+step 320, training accuracy 0.8125 Batch [5120,5136]
+step 330, training accuracy 1 Batch [5280,5296]
+step 340, training accuracy 0.9375 Batch [5440,5456]
+step 350, training accuracy 0.9375 Batch [5600,5616]
+step 360, training accuracy 1 Batch [5760,5776]
+step 370, training accuracy 0.9375 Batch [5920,5936]
+step 380, training accuracy 1 Batch [6080,6096]
+step 390, training accuracy 0.9375 Batch [6240,6256]
+step 400, training accuracy 1 Batch [6400,6416]
+step 410, training accuracy 1 Batch [6560,6576]
+step 420, training accuracy 0.9375 Batch [6720,6736]
+step 430, training accuracy 0.9375 Batch [6880,6896]
+step 440, training accuracy 1 Batch [7040,7056]
+step 450, training accuracy 0.875 Batch [7200,7216]
+step 460, training accuracy 0.875 Batch [7360,7376]
+step 470, training accuracy 0.875 Batch [7520,7536]
+step 480, training accuracy 0.9375 Batch [7680,7696]
+step 490, training accuracy 0.875 Batch [7840,7856]
+step 500, training accuracy 0.875 Batch [8000,8016]
+step 510, training accuracy 0.875 Batch [8160,8176]
+step 520, training accuracy 0.9375 Batch [8320,8336]
+step 530, training accuracy 0.875 Batch [8480,8496]
+step 540, training accuracy 0.9375 Batch [8640,8656]
+step 550, training accuracy 1 Batch [8800,8816]
+step 560, training accuracy 0.9375 Batch [8960,8976]
+step 570, training accuracy 0.8125 Batch [9120,9136]
+step 580, training accuracy 0.9375 Batch [9280,9296]
+step 590, training accuracy 0.8125 Batch [9440,9456]
+step 600, training accuracy 0.8125 Batch [9600,9616]
+step 610, training accuracy 0.75 Batch [9760,9776]
+step 620, training accuracy 0.9375 Batch [9920,9936]
+step 630, training accuracy 1 Batch [10080,10096]
+step 640, training accuracy 0.8125 Batch [10240,10256]
+step 650, training accuracy 1 Batch [10400,10416]
+step 660, training accuracy 0.875 Batch [10560,10576]
+step 670, training accuracy 0.9375 Batch [10720,10736]
+step 680, training accuracy 0.9375 Batch [10880,10896]
+step 690, training accuracy 0.9375 Batch [11040,11056]
+step 700, training accuracy 0.8125 Batch [11200,11216]
+step 710, training accuracy 0.9375 Batch [11360,11376]
+step 720, training accuracy 0.9375 Batch [11520,11536]
+step 730, training accuracy 0.9375 Batch [11680,11696]
+step 740, training accuracy 0.875 Batch [11840,11856]
+step 750, training accuracy 0.9375 Batch [12000,12016]
+step 760, training accuracy 1 Batch [12160,12176]
+step 770, training accuracy 0.9375 Batch [12320,12336]
+step 780, training accuracy 0.875 Batch [12480,12496]
+step 790, training accuracy 0.75 Batch [12640,12656]
+step 800, training accuracy 0.9375 Batch [12800,12816]
+step 810, training accuracy 0.9375 Batch [12960,12976]
+step 820, training accuracy 0.9375 Batch [13120,13136]
+step 830, training accuracy 1 Batch [13280,13296]
+step 840, training accuracy 0.875 Batch [13440,13456]
+step 850, training accuracy 1 Batch [13600,13616]
+step 860, training accuracy 1 Batch [13760,13776]
+step 870, training accuracy 0.8125 Batch [13920,13936]
+step 880, training accuracy 1 Batch [14080,14096]
+step 890, training accuracy 0.9375 Batch [14240,14256]
+step 900, training accuracy 0.875 Batch [14400,14416]
+step 910, training accuracy 1 Batch [14560,14576]
+step 920, training accuracy 1 Batch [14720,14736]
+step 930, training accuracy 0.9375 Batch [14880,14896]
+step 940, training accuracy 0.9375 Batch [15040,15056]
+step 950, training accuracy 0.9375 Batch [15200,15216]
+step 960, training accuracy 1 Batch [15360,15376]
+step 970, training accuracy 0.9375 Batch [15520,15536]
+step 980, training accuracy 1 Batch [15680,15696]
+step 990, training accuracy 0.875 Batch [15840,15856]
+step 1000, training accuracy 0.875 Batch [16000,16016]
+step 1010, training accuracy 1 Batch [16160,16176]
+step 1020, training accuracy 1 Batch [16320,16336]
+step 1030, training accuracy 0.875 Batch [16480,16496]
+step 1040, training accuracy 0.9375 Batch [16640,16656]
+step 1050, training accuracy 1 Batch [16800,16816]
+step 1060, training accuracy 0.9375 Batch [16960,16976]
+step 1070, training accuracy 0.875 Batch [17120,17136]
+step 1080, training accuracy 0.875 Batch [17280,17296]
+step 1090, training accuracy 0.9375 Batch [17440,17456]
+step 1100, training accuracy 1 Batch [17600,17616]
+step 1110, training accuracy 0.875 Batch [17760,17776]
+step 1120, training accuracy 0.9375 Batch [17920,17936]
+step 1130, training accuracy 0.9375 Batch [18080,18096]
+step 1140, training accuracy 0.9375 Batch [18240,18256]
+step 1150, training accuracy 0.9375 Batch [18400,18416]
+step 1160, training accuracy 1 Batch [18560,18576]
+step 1170, training accuracy 0.9375 Batch [18720,18736]
+step 1180, training accuracy 1 Batch [18880,18896]
+step 1190, training accuracy 0.9375 Batch [19040,19056]
+step 1200, training accuracy 0.9375 Batch [19200,19216]
+step 1210, training accuracy 0.6875 Batch [19360,19376]
+step 1220, training accuracy 1 Batch [19520,19536]
+step 1230, training accuracy 1 Batch [19680,19696]
+step 1240, training accuracy 1 Batch [19840,19856]
+step 1250, training accuracy 1 Batch [20000,20016]
+step 1260, training accuracy 0.75 Batch [20160,20176]
+step 1270, training accuracy 0.9375 Batch [20320,20336]
+step 1280, training accuracy 1 Batch [20480,20496]
+step 1290, training accuracy 0.875 Batch [20640,20656]
+step 1300, training accuracy 1 Batch [20800,20816]
+step 1310, training accuracy 0.875 Batch [20960,20976]
+step 1320, training accuracy 0.8125 Batch [21120,21136]
+step 1330, training accuracy 0.9375 Batch [21280,21296]
+step 1340, training accuracy 0.9375 Batch [21440,21456]
+step 1350, training accuracy 0.875 Batch [21600,21616]
+step 1360, training accuracy 1 Batch [21760,21776]
+step 1370, training accuracy 0.9375 Batch [21920,21936]
+step 1380, training accuracy 1 Batch [22080,22096]
+step 1390, training accuracy 1 Batch [22240,22256]
+step 1400, training accuracy 0.9375 Batch [22400,22416]
+step 1410, training accuracy 0.875 Batch [22560,22576]
+step 1420, training accuracy 0.9375 Batch [22720,22736]
+step 1430, training accuracy 0.9375 Batch [22880,22896]
+step 1440, training accuracy 1 Batch [23040,23056]
+step 1450, training accuracy 0.875 Batch [23200,23216]
+step 1460, training accuracy 1 Batch [23360,23376]
+step 1470, training accuracy 0.9375 Batch [23520,23536]
+step 1480, training accuracy 0.9375 Batch [23680,23696]
+step 1490, training accuracy 1 Batch [23840,23856]
+step 1500, training accuracy 1 Batch [24000,24016]
+step 1510, training accuracy 0.9375 Batch [24160,24176]
+step 1520, training accuracy 1 Batch [24320,24336]
+step 1530, training accuracy 0.9375 Batch [24480,24496]
+step 1540, training accuracy 1 Batch [24640,24656]
+step 1550, training accuracy 1 Batch [24800,24816]
+step 1560, training accuracy 1 Batch [24960,24976]
+step 1570, training accuracy 1 Batch [25120,25136]
+step 1580, training accuracy 1 Batch [25280,25296]
+step 1590, training accuracy 0.9375 Batch [25440,25456]
+step 1600, training accuracy 0.9375 Batch [25600,25616]
+step 1610, training accuracy 1 Batch [25760,25776]
+step 1620, training accuracy 1 Batch [25920,25936]
+step 1630, training accuracy 1 Batch [26080,26096]
+step 1640, training accuracy 1 Batch [26240,26256]
+step 1650, training accuracy 0.875 Batch [26400,26416]
+step 1660, training accuracy 0.9375 Batch [26560,26576]
+step 1670, training accuracy 0.875 Batch [26720,26736]
+step 1680, training accuracy 0.9375 Batch [26880,26896]
+step 1690, training accuracy 1 Batch [27040,27056]
+step 1700, training accuracy 1 Batch [27200,27216]
+step 1710, training accuracy 1 Batch [27360,27376]
+step 1720, training accuracy 0.9375 Batch [27520,27536]
+step 1730, training accuracy 1 Batch [27680,27696]
+step 1740, training accuracy 0.9375 Batch [27840,27856]
+step 1750, training accuracy 0.9375 Batch [28000,28016]
+step 1760, training accuracy 0.9375 Batch [28160,28176]
+step 1770, training accuracy 1 Batch [28320,28336]
+step 1780, training accuracy 0.9375 Batch [28480,28496]
+step 1790, training accuracy 0.8125 Batch [28640,28656]
+step 1800, training accuracy 0.9375 Batch [28800,28816]
+step 1810, training accuracy 1 Batch [28960,28976]
+step 1820, training accuracy 0.875 Batch [29120,29136]
+step 1830, training accuracy 0.9375 Batch [29280,29296]
+step 1840, training accuracy 0.9375 Batch [29440,29456]
+step 1850, training accuracy 1 Batch [29600,29616]
+step 1860, training accuracy 1 Batch [29760,29776]
+step 1870, training accuracy 0.875 Batch [29920,29936]
+step 1880, training accuracy 0.875 Batch [30080,30096]
+step 1890, training accuracy 1 Batch [30240,30256]
+step 1900, training accuracy 1 Batch [30400,30416]
+step 1910, training accuracy 0.9375 Batch [30560,30576]
+step 1920, training accuracy 0.9375 Batch [30720,30736]
+step 1930, training accuracy 1 Batch [30880,30896]
+step 1940, training accuracy 1 Batch [31040,31056]
+step 1950, training accuracy 1 Batch [31200,31216]
+step 1960, training accuracy 0.9375 Batch [31360,31376]
+step 1970, training accuracy 1 Batch [31520,31536]
+step 1980, training accuracy 1 Batch [31680,31696]
+step 1990, training accuracy 0.875 Batch [31840,31856]
+step 2000, training accuracy 1 Batch [32000,32016]
+step 2010, training accuracy 0.9375 Batch [32160,32176]
+step 2020, training accuracy 1 Batch [32320,32336]
+step 2030, training accuracy 1 Batch [32480,32496]
+step 2040, training accuracy 1 Batch [32640,32656]
+step 2050, training accuracy 0.9375 Batch [32800,32816]
+step 2060, training accuracy 1 Batch [32960,32976]
+step 2070, training accuracy 1 Batch [33120,33136]
+step 2080, training accuracy 1 Batch [33280,33296]
+step 2090, training accuracy 1 Batch [33440,33456]
+step 2100, training accuracy 1 Batch [33600,33616]
+step 2110, training accuracy 0.9375 Batch [33760,33776]
+step 2120, training accuracy 1 Batch [33920,33936]
+step 2130, training accuracy 1 Batch [34080,34096]
+step 2140, training accuracy 0.9375 Batch [34240,34256]
+step 2150, training accuracy 0.75 Batch [34400,34416]
+step 2160, training accuracy 1 Batch [34560,34576]
+step 2170, training accuracy 1 Batch [34720,34736]
+step 2180, training accuracy 1 Batch [34880,34896]
+step 2190, training accuracy 0.9375 Batch [35040,35056]
+step 2200, training accuracy 0.9375 Batch [35200,35216]
+step 2210, training accuracy 1 Batch [35360,35376]
+step 2220, training accuracy 1 Batch [35520,35536]
+step 2230, training accuracy 0.875 Batch [35680,35696]
+step 2240, training accuracy 0.875 Batch [35840,35856]
+step 2250, training accuracy 1 Batch [36000,36016]
+step 2260, training accuracy 0.9375 Batch [36160,36176]
+step 2270, training accuracy 1 Batch [36320,36336]
+step 2280, training accuracy 1 Batch [36480,36496]
+step 2290, training accuracy 0.9375 Batch [36640,36656]
+step 2300, training accuracy 1 Batch [36800,36816]
+step 2310, training accuracy 1 Batch [36960,36976]
+step 2320, training accuracy 0.875 Batch [37120,37136]
+step 2330, training accuracy 0.9375 Batch [37280,37296]
+step 2340, training accuracy 0.9375 Batch [37440,37456]
+step 2350, training accuracy 0.875 Batch [37600,37616]
+step 2360, training accuracy 0.9375 Batch [37760,37776]
+step 2370, training accuracy 0.875 Batch [37920,37936]
+step 2380, training accuracy 1 Batch [38080,38096]
+step 2390, training accuracy 0.9375 Batch [38240,38256]
+step 2400, training accuracy 0.9375 Batch [38400,38416]
+step 2410, training accuracy 0.9375 Batch [38560,38576]
+step 2420, training accuracy 1 Batch [38720,38736]
+step 2430, training accuracy 0.9375 Batch [38880,38896]
+step 2440, training accuracy 1 Batch [39040,39056]
+step 2450, training accuracy 1 Batch [39200,39216]
+step 2460, training accuracy 1 Batch [39360,39376]
+step 2470, training accuracy 1 Batch [39520,39536]
+step 2480, training accuracy 0.9375 Batch [39680,39696]
+step 2490, training accuracy 1 Batch [39840,39856]
+step 2500, training accuracy 1 Batch [40000,40016]
+step 2510, training accuracy 1 Batch [40160,40176]
+step 2520, training accuracy 1 Batch [40320,40336]
+step 2530, training accuracy 0.9375 Batch [40480,40496]
+step 2540, training accuracy 0.875 Batch [40640,40656]
+step 2550, training accuracy 1 Batch [40800,40816]
+step 2560, training accuracy 1 Batch [40960,40976]
+step 2570, training accuracy 1 Batch [41120,41136]
+step 2580, training accuracy 0.875 Batch [41280,41296]
+step 2590, training accuracy 1 Batch [41440,41456]
+step 2600, training accuracy 1 Batch [41600,41616]
+step 2610, training accuracy 1 Batch [41760,41776]
+step 2620, training accuracy 0.9375 Batch [41920,41936]
+step 2630, training accuracy 1 Batch [42080,42096]
+step 2640, training accuracy 0.9375 Batch [42240,42256]
+step 2650, training accuracy 0.9375 Batch [42400,42416]
+step 2660, training accuracy 0.9375 Batch [42560,42576]
+step 2670, training accuracy 1 Batch [42720,42736]
+step 2680, training accuracy 0.9375 Batch [42880,42896]
+step 2690, training accuracy 0.9375 Batch [43040,43056]
+step 2700, training accuracy 0.875 Batch [43200,43216]
+step 2710, training accuracy 0.9375 Batch [43360,43376]
+step 2720, training accuracy 1 Batch [43520,43536]
+step 2730, training accuracy 1 Batch [43680,43696]
+step 2740, training accuracy 1 Batch [43840,43856]
+step 2750, training accuracy 1 Batch [44000,44016]
+step 2760, training accuracy 0.9375 Batch [44160,44176]
+step 2770, training accuracy 1 Batch [44320,44336]
+step 2780, training accuracy 0.875 Batch [44480,44496]
+step 2790, training accuracy 1 Batch [44640,44656]
+step 2800, training accuracy 1 Batch [44800,44816]
+step 2810, training accuracy 0.9375 Batch [44960,44976]
+step 2820, training accuracy 1 Batch [45120,45136]
+step 2830, training accuracy 1 Batch [45280,45296]
+step 2840, training accuracy 0.875 Batch [45440,45456]
+step 2850, training accuracy 0.8125 Batch [45600,45616]
+step 2860, training accuracy 0.9375 Batch [45760,45776]
+step 2870, training accuracy 1 Batch [45920,45936]
+step 2880, training accuracy 0.9375 Batch [46080,46096]
+step 2890, training accuracy 0.8125 Batch [46240,46256]
+step 2900, training accuracy 0.875 Batch [46400,46416]
+step 2910, training accuracy 0.9375 Batch [46560,46576]
+step 2920, training accuracy 0.9375 Batch [46720,46736]
+step 2930, training accuracy 1 Batch [46880,46896]
+step 2940, training accuracy 1 Batch [47040,47056]
+step 2950, training accuracy 1 Batch [47200,47216]
+step 2960, training accuracy 1 Batch [47360,47376]
+step 2970, training accuracy 0.9375 Batch [47520,47536]
+step 2980, training accuracy 0.875 Batch [47680,47696]
+step 2990, training accuracy 0.9375 Batch [47840,47856]
+step 3000, training accuracy 1 Batch [48000,48016]
+step 3010, training accuracy 0.9375 Batch [48160,48176]
+step 3020, training accuracy 1 Batch [48320,48336]
+step 3030, training accuracy 0.9375 Batch [48480,48496]
+step 3040, training accuracy 0.9375 Batch [48640,48656]
+step 3050, training accuracy 1 Batch [48800,48816]
+step 3060, training accuracy 0.875 Batch [48960,48976]
+step 3070, training accuracy 1 Batch [49120,49136]
+step 3080, training accuracy 1 Batch [49280,49296]
+step 3090, training accuracy 1 Batch [49440,49456]
+step 3100, training accuracy 1 Batch [49600,49616]
+step 3110, training accuracy 1 Batch [49760,49776]
+step 3120, training accuracy 0.9375 Batch [49920,49936]
+Training Time: 8.411 seconds
+TESTING
+test accuracy 0.971

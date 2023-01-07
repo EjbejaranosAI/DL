@@ -1,0 +1,458 @@
+unload bsc/commands (PATH, MANPATH) 
+unload CUDA/9.1 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+unload OPENMPI/3.0.0 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, MPI, MPI_V) 
+unload GCC/6.4.0 (PATH, MANPATH, INFOPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, STD COMP VARS) 
+load FFMPEG/4.0.2 (PATH, LIBRARY_PATH, PKG_CONFIG_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH) 
+load GCC/6.4.0 (PATH, MANPATH, INFOPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, STD COMP VARS) 
+load CUDA/9.1 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load CUDNN/7.1.3 (LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH) 
+load OPENMPI/3.0.0 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, MPI, MPI_V) 
+load ATLAS/3.10.3 (LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH) 
+load SCALAPACK/2.0.2 (LD_LIBRARY_PATH, LIBRARY_PATH, PKG_CONFIG_PATH) 
+load FFTW/3.3.7 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH) 
+load SZIP/2.1.1 (LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH) 
+load OPENCV/3.4.1 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, PKG_CONFIG_PATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PYTHONPATH) 
+load PYTHON/3.6.5_ML (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PYTHONHOME, PYTHONPATH) 
+2023-01-07 19:26:44.573641: W tensorflow/core/platform/profile_utils/cpu_utils.cc:98] Failed to find bogomips in /proc/cpuinfo; cannot determine CPU frequency
+2023-01-07 19:26:44.576389: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x494177b0 executing computations on platform Host. Devices:
+2023-01-07 19:26:44.576423: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2023-01-07 19:26:44.758686: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x49ced8f0 executing computations on platform CUDA. Devices:
+2023-01-07 19:26:44.758791: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-01-07 19:26:44.761894: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+totalMemory: 15.78GiB freeMemory: 15.47GiB
+2023-01-07 19:26:44.761919: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2023-01-07 19:26:44.771501: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-01-07 19:26:44.771567: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2023-01-07 19:26:44.771581: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2023-01-07 19:26:44.771691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15052 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+WARNING:tensorflow:From /apps/PYTHON/3.6.5_ML/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From multilayer_modified.py:108: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From multilayer_modified.py:118: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2023-01-07 19:26:46.295810: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2023-01-07 19:26:46.295909: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-01-07 19:26:46.295925: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2023-01-07 19:26:46.295938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2023-01-07 19:26:46.296043: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15052 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2023-01-07 19:26:46.297748: I tensorflow/core/common_runtime/direct_session.cc:317] Device mapping:
+/job:localhost/replica:0/task:0/device:XLA_CPU:0 -> device: XLA_CPU device
+/job:localhost/replica:0/task:0/device:XLA_GPU:0 -> device: XLA_GPU device
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0
+
+2023-01-07 19:26:46.315445: I tensorflow/core/common_runtime/placer.cc:1059] zeros: (Fill)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315468: I tensorflow/core/common_runtime/placer.cc:1059] Variable: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315483: I tensorflow/core/common_runtime/placer.cc:1059] Variable/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315496: I tensorflow/core/common_runtime/placer.cc:1059] Variable/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315513: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal/TruncatedNormal: (TruncatedNormal)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315529: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315545: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315560: I tensorflow/core/common_runtime/placer.cc:1059] Variable_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315573: I tensorflow/core/common_runtime/placer.cc:1059] Variable_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315585: I tensorflow/core/common_runtime/placer.cc:1059] Variable_1/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315599: I tensorflow/core/common_runtime/placer.cc:1059] Variable_2: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315612: I tensorflow/core/common_runtime/placer.cc:1059] Variable_2/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315624: I tensorflow/core/common_runtime/placer.cc:1059] Variable_2/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315639: I tensorflow/core/common_runtime/placer.cc:1059] Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315654: I tensorflow/core/common_runtime/placer.cc:1059] Conv2D: (Conv2D)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315670: I tensorflow/core/common_runtime/placer.cc:1059] add: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315685: I tensorflow/core/common_runtime/placer.cc:1059] Relu: (Relu)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315700: I tensorflow/core/common_runtime/placer.cc:1059] MaxPool: (MaxPool)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315716: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_1/TruncatedNormal: (TruncatedNormal)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315732: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_1/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315747: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_1: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315761: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315774: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315785: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315799: I tensorflow/core/common_runtime/placer.cc:1059] Variable_4: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315811: I tensorflow/core/common_runtime/placer.cc:1059] Variable_4/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315823: I tensorflow/core/common_runtime/placer.cc:1059] Variable_4/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315838: I tensorflow/core/common_runtime/placer.cc:1059] Conv2D_1: (Conv2D)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315853: I tensorflow/core/common_runtime/placer.cc:1059] add_1: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315868: I tensorflow/core/common_runtime/placer.cc:1059] Relu_1: (Relu)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315883: I tensorflow/core/common_runtime/placer.cc:1059] MaxPool_1: (MaxPool)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315898: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_2/TruncatedNormal: (TruncatedNormal)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315914: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_2/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315929: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_2: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315942: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315954: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315966: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315980: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.315992: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316004: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316019: I tensorflow/core/common_runtime/placer.cc:1059] Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316034: I tensorflow/core/common_runtime/placer.cc:1059] MatMul: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316049: I tensorflow/core/common_runtime/placer.cc:1059] add_2: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316064: I tensorflow/core/common_runtime/placer.cc:1059] Relu_2: (Relu)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316079: I tensorflow/core/common_runtime/placer.cc:1059] PlaceholderWithDefault: (PlaceholderWithDefault)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316094: I tensorflow/core/common_runtime/placer.cc:1059] sub: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316110: I tensorflow/core/common_runtime/placer.cc:1059] dropout/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316125: I tensorflow/core/common_runtime/placer.cc:1059] dropout/sub: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316140: I tensorflow/core/common_runtime/placer.cc:1059] dropout/random_uniform/RandomUniform: (RandomUniform)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316155: I tensorflow/core/common_runtime/placer.cc:1059] dropout/random_uniform/sub: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316170: I tensorflow/core/common_runtime/placer.cc:1059] dropout/random_uniform/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316185: I tensorflow/core/common_runtime/placer.cc:1059] dropout/random_uniform: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316200: I tensorflow/core/common_runtime/placer.cc:1059] dropout/add: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316215: I tensorflow/core/common_runtime/placer.cc:1059] dropout/Floor: (Floor)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316230: I tensorflow/core/common_runtime/placer.cc:1059] dropout/truediv: (RealDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316245: I tensorflow/core/common_runtime/placer.cc:1059] dropout/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316260: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_3/TruncatedNormal: (TruncatedNormal)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316275: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_3/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316290: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_3: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316303: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316315: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316327: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316341: I tensorflow/core/common_runtime/placer.cc:1059] Variable_8: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316353: I tensorflow/core/common_runtime/placer.cc:1059] Variable_8/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316365: I tensorflow/core/common_runtime/placer.cc:1059] Variable_8/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316379: I tensorflow/core/common_runtime/placer.cc:1059] MatMul_1: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316394: I tensorflow/core/common_runtime/placer.cc:1059] add_3: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316409: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/labels_stop_gradient: (StopGradient)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316425: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316440: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Shape_1: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316455: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Sub: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316470: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Slice/begin: (Pack)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316486: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Slice: (Slice)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316501: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/concat: (ConcatV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316517: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316532: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Shape_2: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316547: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Sub_1: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316562: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Slice_1/begin: (Pack)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316577: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Slice_1: (Slice)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316592: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/concat_1: (ConcatV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316607: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316622: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg: (SoftmaxCrossEntropyWithLogits)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316637: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Sub_2: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316653: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Slice_2/size: (Pack)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316667: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Slice_2: (Slice)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316683: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Reshape_2: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316698: I tensorflow/core/common_runtime/placer.cc:1059] Mean: (Mean)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316712: I tensorflow/core/common_runtime/placer.cc:1059] Variable_9: (VariableV2)/job:localhost/replica:0/task:0/device:CPU:0
+2023-01-07 19:26:46.316724: I tensorflow/core/common_runtime/placer.cc:1059] Variable_9/Assign: (Assign)/job:localhost/replica:0/task:0/device:CPU:0
+2023-01-07 19:26:46.316736: I tensorflow/core/common_runtime/placer.cc:1059] Variable_9/read: (Identity)/job:localhost/replica:0/task:0/device:CPU:0
+2023-01-07 19:26:46.316751: I tensorflow/core/common_runtime/placer.cc:1059] mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316766: I tensorflow/core/common_runtime/placer.cc:1059] ExponentialDecay/Cast: (Cast)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316782: I tensorflow/core/common_runtime/placer.cc:1059] ExponentialDecay/Cast_2: (Cast)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316797: I tensorflow/core/common_runtime/placer.cc:1059] ExponentialDecay/truediv: (RealDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316812: I tensorflow/core/common_runtime/placer.cc:1059] ExponentialDecay/Floor: (Floor)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316827: I tensorflow/core/common_runtime/placer.cc:1059] ExponentialDecay/Pow: (Pow)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316841: I tensorflow/core/common_runtime/placer.cc:1059] ExponentialDecay: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316857: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Fill: (Fill)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316871: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.316887: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317493: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Tile: (Tile)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317510: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Shape_1: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317526: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Prod: (Prod)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317541: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Prod_1: (Prod)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317556: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Maximum: (Maximum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317571: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/floordiv: (FloorDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317585: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Cast: (Cast)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317600: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/truediv: (RealDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317615: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg/Reshape_2_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317631: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg/Reshape_2_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317646: I tensorflow/core/common_runtime/placer.cc:1059] gradients/zeros_like: (ZerosLike)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317661: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg_grad/ExpandDims: (ExpandDims)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317676: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg_grad/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317691: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg_grad/LogSoftmax: (LogSoftmax)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317706: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg_grad/Neg: (Neg)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317721: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg_grad/ExpandDims_1: (ExpandDims)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317736: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg_grad/mul_1: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317751: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317763: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317775: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317790: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg/Reshape_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317805: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg/Reshape_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317820: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_3_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317835: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_3_grad/BroadcastGradientArgs: (BroadcastGradientArgs)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317850: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_3_grad/Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317865: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_3_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317880: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_3_grad/Sum_1: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317895: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_3_grad/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317909: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_3_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317922: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_3_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317933: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_3_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317948: I tensorflow/core/common_runtime/placer.cc:1059] gradients/MatMul_1_grad/MatMul: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317963: I tensorflow/core/common_runtime/placer.cc:1059] gradients/MatMul_1_grad/MatMul_1: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317978: I tensorflow/core/common_runtime/placer.cc:1059] gradients/MatMul_1_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.317990: I tensorflow/core/common_runtime/placer.cc:1059] gradients/MatMul_1_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318040: I tensorflow/core/common_runtime/placer.cc:1059] gradients/MatMul_1_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318057: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/mul_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318073: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/mul_grad/Shape_1: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318088: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/mul_grad/BroadcastGradientArgs: (BroadcastGradientArgs)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318102: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/mul_grad/Mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318117: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/mul_grad/Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318132: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/mul_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318147: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/mul_grad/Mul_1: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318162: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/mul_grad/Sum_1: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318177: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/mul_grad/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318192: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/mul_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318204: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/mul_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318216: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/mul_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318231: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318246: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/BroadcastGradientArgs: (BroadcastGradientArgs)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318261: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/RealDiv: (RealDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318276: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318291: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318305: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/Neg: (Neg)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318320: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/RealDiv_1: (RealDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318336: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/RealDiv_2: (RealDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318350: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318365: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/Sum_1: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318380: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318395: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318407: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318419: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318434: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Relu_2_grad/ReluGrad: (ReluGrad)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318449: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_2_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318464: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_2_grad/BroadcastGradientArgs: (BroadcastGradientArgs)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318479: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_2_grad/Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318494: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_2_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318509: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_2_grad/Sum_1: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318524: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_2_grad/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318538: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_2_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318550: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_2_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318562: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_2_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318577: I tensorflow/core/common_runtime/placer.cc:1059] gradients/MatMul_grad/MatMul: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318592: I tensorflow/core/common_runtime/placer.cc:1059] gradients/MatMul_grad/MatMul_1: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318607: I tensorflow/core/common_runtime/placer.cc:1059] gradients/MatMul_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318619: I tensorflow/core/common_runtime/placer.cc:1059] gradients/MatMul_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318631: I tensorflow/core/common_runtime/placer.cc:1059] gradients/MatMul_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318646: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Reshape_1_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318661: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Reshape_1_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318675: I tensorflow/core/common_runtime/placer.cc:1059] gradients/MaxPool_1_grad/MaxPoolGrad: (MaxPoolGrad)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318690: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Relu_1_grad/ReluGrad: (ReluGrad)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318705: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_1_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318720: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_1_grad/BroadcastGradientArgs: (BroadcastGradientArgs)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318735: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_1_grad/Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318750: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_1_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318765: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_1_grad/Sum_1: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318779: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_1_grad/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318794: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_1_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318806: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_1_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318818: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_1_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318832: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Conv2D_1_grad/ShapeN: (ShapeN)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318847: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Conv2D_1_grad/Conv2DBackpropInput: (Conv2DBackpropInput)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318862: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Conv2D_1_grad/Conv2DBackpropFilter: (Conv2DBackpropFilter)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318877: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Conv2D_1_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318889: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Conv2D_1_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318901: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Conv2D_1_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318916: I tensorflow/core/common_runtime/placer.cc:1059] gradients/MaxPool_grad/MaxPoolGrad: (MaxPoolGrad)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318931: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Relu_grad/ReluGrad: (ReluGrad)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318946: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318960: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_grad/BroadcastGradientArgs: (BroadcastGradientArgs)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318975: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_grad/Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.318991: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319006: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_grad/Sum_1: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319021: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_grad/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319036: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319048: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319060: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319074: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Conv2D_grad/ShapeN: (ShapeN)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319090: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Conv2D_grad/Conv2DBackpropInput: (Conv2DBackpropInput)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319105: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Conv2D_grad/Conv2DBackpropFilter: (Conv2DBackpropFilter)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319120: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Conv2D_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319132: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Conv2D_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319144: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Conv2D_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319156: I tensorflow/core/common_runtime/placer.cc:1059] beta1_power: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319167: I tensorflow/core/common_runtime/placer.cc:1059] beta1_power/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319179: I tensorflow/core/common_runtime/placer.cc:1059] beta1_power/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319191: I tensorflow/core/common_runtime/placer.cc:1059] beta2_power: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319203: I tensorflow/core/common_runtime/placer.cc:1059] beta2_power/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319214: I tensorflow/core/common_runtime/placer.cc:1059] beta2_power/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319226: I tensorflow/core/common_runtime/placer.cc:1059] Variable_1/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319238: I tensorflow/core/common_runtime/placer.cc:1059] Variable_1/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.319249: I tensorflow/core/common_runtime/placer.cc:1059] Variable_1/Adam/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322706: I tensorflow/core/common_runtime/placer.cc:1059] Variable_1/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322719: I tensorflow/core/common_runtime/placer.cc:1059] Variable_1/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322731: I tensorflow/core/common_runtime/placer.cc:1059] Variable_1/Adam_1/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322743: I tensorflow/core/common_runtime/placer.cc:1059] Variable_2/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322755: I tensorflow/core/common_runtime/placer.cc:1059] Variable_2/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322767: I tensorflow/core/common_runtime/placer.cc:1059] Variable_2/Adam/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322787: I tensorflow/core/common_runtime/placer.cc:1059] Variable_2/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322799: I tensorflow/core/common_runtime/placer.cc:1059] Variable_2/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322811: I tensorflow/core/common_runtime/placer.cc:1059] Variable_2/Adam_1/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322823: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Adam/Initializer/zeros: (Fill)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322835: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322847: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322858: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Adam/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322870: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Adam_1/Initializer/zeros: (Fill)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322882: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322894: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322905: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Adam_1/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322917: I tensorflow/core/common_runtime/placer.cc:1059] Variable_4/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322929: I tensorflow/core/common_runtime/placer.cc:1059] Variable_4/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322940: I tensorflow/core/common_runtime/placer.cc:1059] Variable_4/Adam/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322952: I tensorflow/core/common_runtime/placer.cc:1059] Variable_4/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322964: I tensorflow/core/common_runtime/placer.cc:1059] Variable_4/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322976: I tensorflow/core/common_runtime/placer.cc:1059] Variable_4/Adam_1/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322987: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Adam/Initializer/zeros: (Fill)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.322999: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323011: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323023: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Adam/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323035: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Adam_1/Initializer/zeros: (Fill)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323046: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323058: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323070: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Adam_1/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323081: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Adam/Initializer/zeros: (Fill)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323093: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323105: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323117: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Adam/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323128: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Adam_1/Initializer/zeros: (Fill)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323140: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323152: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323163: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Adam_1/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323175: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Adam/Initializer/zeros: (Fill)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323187: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323198: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323210: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Adam/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323222: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Adam_1/Initializer/zeros: (Fill)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323233: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323245: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323256: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Adam_1/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323268: I tensorflow/core/common_runtime/placer.cc:1059] Variable_8/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323280: I tensorflow/core/common_runtime/placer.cc:1059] Variable_8/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323291: I tensorflow/core/common_runtime/placer.cc:1059] Variable_8/Adam/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323303: I tensorflow/core/common_runtime/placer.cc:1059] Variable_8/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323315: I tensorflow/core/common_runtime/placer.cc:1059] Variable_8/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323326: I tensorflow/core/common_runtime/placer.cc:1059] Variable_8/Adam_1/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323338: I tensorflow/core/common_runtime/placer.cc:1059] Adam/update_Variable_1/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323350: I tensorflow/core/common_runtime/placer.cc:1059] Adam/update_Variable_2/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323361: I tensorflow/core/common_runtime/placer.cc:1059] Adam/update_Variable_3/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323373: I tensorflow/core/common_runtime/placer.cc:1059] Adam/update_Variable_4/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323385: I tensorflow/core/common_runtime/placer.cc:1059] Adam/update_Variable_5/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323396: I tensorflow/core/common_runtime/placer.cc:1059] Adam/update_Variable_6/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323408: I tensorflow/core/common_runtime/placer.cc:1059] Adam/update_Variable_7/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323419: I tensorflow/core/common_runtime/placer.cc:1059] Adam/update_Variable_8/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323431: I tensorflow/core/common_runtime/placer.cc:1059] Adam/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323443: I tensorflow/core/common_runtime/placer.cc:1059] Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323454: I tensorflow/core/common_runtime/placer.cc:1059] Adam/mul_1: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323466: I tensorflow/core/common_runtime/placer.cc:1059] Adam/Assign_1: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323481: I tensorflow/core/common_runtime/placer.cc:1059] Adam: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323497: I tensorflow/core/common_runtime/placer.cc:1059] ArgMax: (ArgMax)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323512: I tensorflow/core/common_runtime/placer.cc:1059] ArgMax_1: (ArgMax)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323527: I tensorflow/core/common_runtime/placer.cc:1059] Equal: (Equal)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323541: I tensorflow/core/common_runtime/placer.cc:1059] Cast: (Cast)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323556: I tensorflow/core/common_runtime/placer.cc:1059] Mean_1: (Mean)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323571: I tensorflow/core/common_runtime/placer.cc:1059] init: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323586: I tensorflow/core/common_runtime/placer.cc:1059] Placeholder: (Placeholder)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323601: I tensorflow/core/common_runtime/placer.cc:1059] zeros/shape_as_tensor: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323616: I tensorflow/core/common_runtime/placer.cc:1059] zeros/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323631: I tensorflow/core/common_runtime/placer.cc:1059] Placeholder_1: (Placeholder)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323646: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323661: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal/mean: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323676: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal/stddev: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323691: I tensorflow/core/common_runtime/placer.cc:1059] Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323706: I tensorflow/core/common_runtime/placer.cc:1059] Reshape/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323721: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_1/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323736: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_1/mean: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323751: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_1/stddev: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323766: I tensorflow/core/common_runtime/placer.cc:1059] Const_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323781: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_2/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323795: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_2/mean: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323810: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_2/stddev: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323825: I tensorflow/core/common_runtime/placer.cc:1059] Const_2: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323840: I tensorflow/core/common_runtime/placer.cc:1059] Reshape_1/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323855: I tensorflow/core/common_runtime/placer.cc:1059] PlaceholderWithDefault/input: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323870: I tensorflow/core/common_runtime/placer.cc:1059] sub/x: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323885: I tensorflow/core/common_runtime/placer.cc:1059] dropout/sub/x: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323900: I tensorflow/core/common_runtime/placer.cc:1059] dropout/random_uniform/min: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323915: I tensorflow/core/common_runtime/placer.cc:1059] dropout/random_uniform/max: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323930: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_3/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323944: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_3/mean: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323959: I tensorflow/core/common_runtime/placer.cc:1059] truncated_normal_3/stddev: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323974: I tensorflow/core/common_runtime/placer.cc:1059] Const_3: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.323989: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Rank: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324004: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Rank_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324019: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Sub/y: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324034: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Slice/size: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324049: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/concat/values_0: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324071: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/concat/axis: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324086: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Rank_2: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324101: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Sub_1/y: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324116: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Slice_1/size: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324131: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/concat_1/values_0: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324145: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/concat_1/axis: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324160: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Sub_2/y: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324175: I tensorflow/core/common_runtime/placer.cc:1059] softmax_cross_entropy_with_logits_sg/Slice_2/begin: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324190: I tensorflow/core/common_runtime/placer.cc:1059] Const_4: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324205: I tensorflow/core/common_runtime/placer.cc:1059] Variable_9/initial_value: (Const)/job:localhost/replica:0/task:0/device:CPU:0
+2023-01-07 19:26:46.324220: I tensorflow/core/common_runtime/placer.cc:1059] mul/y: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324235: I tensorflow/core/common_runtime/placer.cc:1059] ExponentialDecay/learning_rate: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324250: I tensorflow/core/common_runtime/placer.cc:1059] ExponentialDecay/Cast/x: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324265: I tensorflow/core/common_runtime/placer.cc:1059] ExponentialDecay/Cast_1/x: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324280: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324295: I tensorflow/core/common_runtime/placer.cc:1059] gradients/grad_ys_0: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324310: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Reshape/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324325: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Shape_2: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324340: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324355: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Const_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324370: I tensorflow/core/common_runtime/placer.cc:1059] gradients/Mean_grad/Maximum/y: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324385: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg_grad/ExpandDims/dim: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324399: I tensorflow/core/common_runtime/placer.cc:1059] gradients/softmax_cross_entropy_with_logits_sg_grad/ExpandDims_1/dim: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324414: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_3_grad/Shape_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324429: I tensorflow/core/common_runtime/placer.cc:1059] gradients/dropout/truediv_grad/Shape_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324444: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_2_grad/Shape_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324459: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_1_grad/Shape_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324474: I tensorflow/core/common_runtime/placer.cc:1059] gradients/add_grad/Shape_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324486: I tensorflow/core/common_runtime/placer.cc:1059] beta1_power/initial_value: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324498: I tensorflow/core/common_runtime/placer.cc:1059] beta2_power/initial_value: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324510: I tensorflow/core/common_runtime/placer.cc:1059] Variable_1/Adam/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324521: I tensorflow/core/common_runtime/placer.cc:1059] Variable_1/Adam_1/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324533: I tensorflow/core/common_runtime/placer.cc:1059] Variable_2/Adam/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324545: I tensorflow/core/common_runtime/placer.cc:1059] Variable_2/Adam_1/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324557: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Adam/Initializer/zeros/shape_as_tensor: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324568: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Adam/Initializer/zeros/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324580: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Adam_1/Initializer/zeros/shape_as_tensor: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324592: I tensorflow/core/common_runtime/placer.cc:1059] Variable_3/Adam_1/Initializer/zeros/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324604: I tensorflow/core/common_runtime/placer.cc:1059] Variable_4/Adam/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324617: I tensorflow/core/common_runtime/placer.cc:1059] Variable_4/Adam_1/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324629: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Adam/Initializer/zeros/shape_as_tensor: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324640: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Adam/Initializer/zeros/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324652: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Adam_1/Initializer/zeros/shape_as_tensor: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324664: I tensorflow/core/common_runtime/placer.cc:1059] Variable_5/Adam_1/Initializer/zeros/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324676: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Adam/Initializer/zeros/shape_as_tensor: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324688: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Adam/Initializer/zeros/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324699: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Adam_1/Initializer/zeros/shape_as_tensor: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324711: I tensorflow/core/common_runtime/placer.cc:1059] Variable_6/Adam_1/Initializer/zeros/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324722: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Adam/Initializer/zeros/shape_as_tensor: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324734: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Adam/Initializer/zeros/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324746: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Adam_1/Initializer/zeros/shape_as_tensor: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324758: I tensorflow/core/common_runtime/placer.cc:1059] Variable_7/Adam_1/Initializer/zeros/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324769: I tensorflow/core/common_runtime/placer.cc:1059] Variable_8/Adam/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324781: I tensorflow/core/common_runtime/placer.cc:1059] Variable_8/Adam_1/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324796: I tensorflow/core/common_runtime/placer.cc:1059] Adam/beta1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324811: I tensorflow/core/common_runtime/placer.cc:1059] Adam/beta2: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324826: I tensorflow/core/common_runtime/placer.cc:1059] Adam/epsilon: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324841: I tensorflow/core/common_runtime/placer.cc:1059] ArgMax/dimension: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324856: I tensorflow/core/common_runtime/placer.cc:1059] ArgMax_1/dimension: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:46.324871: I tensorflow/core/common_runtime/placer.cc:1059] Const_5: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2023-01-07 19:26:47.846099: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2023-01-07 19:26:47.846198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-01-07 19:26:47.846213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2023-01-07 19:26:47.846226: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2023-01-07 19:26:47.846301: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15052 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2023-01-07 19:26:47.898636: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.9.1 locally
